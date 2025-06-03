@@ -5,8 +5,8 @@ import time
 
 options = {
     'proxy': {
-        'http': 'http://d0a72fc00e1905cbdbf4__cr.br:16a271cc21b51cef@gw.dataimpulse.com:11201',
-        'https': 'https://d0a72fc00e1905cbdbf4__cr.br:16a271cc21b51cef@gw.dataimpulse.com:11201',
+        'http': 'http://d0a72fc00e1905cbdbf4__cr.br:16a271cc21b51cef@gw.dataimpulse.com:10203',
+        'https': 'https://d0a72fc00e1905cbdbf4__cr.br:16a271cc21b51cef@gw.dataimpulse.com:10203',
         'no_proxy': 'localhost,127.0.0.1'
     }
 }
@@ -47,7 +47,7 @@ chrome_options.add_argument("--disable-blink-features=AutomationControlled") # M
 
 driver = webdriver.Chrome(seleniumwire_options=options, options=chrome_options)
 
-driver.get("https://sepolia-faucet.pk910.de/#/mine/1ef0c5f5-cc0a-4288-beab-4a8308d3d49c")
+driver.get("https://sepolia-faucet.pk910.de/#/mine/a0afc090-89eb-4663-b7a3-3f8a3af5c131")
 time.sleep(50000)
 
 div_element = driver.find_element(By.CLASS_NAME, "col-3")
